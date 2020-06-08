@@ -1,6 +1,6 @@
-/**
+package com.rz; /**
  * Classe che implementa un oggetto pila (o stack) per la gestione delle liste visive dello scontrino attuale. Ogni nuovo scontrino
- * e' visto come un nuovo oggetto Pila, che contiene l'ordine per lo scontrino stesso (ovvero, bibite e cibi ordinati)
+ * e' visto come un nuovo oggetto com.rz.Pila, che contiene l'ordine per lo scontrino stesso (ovvero, bibite e cibi ordinati)
  * Ogni volta che si preme un bottone, la pietanza relativa viene aggiunta nel vettore elementi. 
  * Se si preme il bottone Cancella, l'ultima ordinazione fatta (ovvero, l'elemento top della pila), viene rimossa.
  */
@@ -48,7 +48,7 @@ public class Pila {
 	}
 
 	/**
-	 * Metodo per ritrovare l'oggetto top della Pila, ovvero l'ultimo oggetto
+	 * Metodo per ritrovare l'oggetto top della com.rz.Pila, ovvero l'ultimo oggetto
 	 * inserito.
 	 * 
 	 * @return riferimento all'ultimo oggetto inserito
@@ -67,17 +67,14 @@ public class Pila {
 	/**
 	 * Metodo per verificare se la pila contiene oggetti.
 	 * 
-	 * @return false se la Pila contiene almeno un oggetto, vero altrimenti.
+	 * @return false se la com.rz.Pila contiene almeno un oggetto, vero altrimenti.
 	 */
 	public boolean vuota() {
-		if (elementi.size() > 0)
-			return false;
-		else
-			return true;
+		return elementi.isEmpty();
 	}
 
 	/**
-	 * Restituisce il numero di oggetti presenti nella Pila
+	 * Restituisce il numero di oggetti presenti nella com.rz.Pila
 	 * 
 	 * @return numero (integer) di elementi presenti nella pila.
 	 */
